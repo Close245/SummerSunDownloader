@@ -1,0 +1,8 @@
+{
+    "download_path": "E:/",
+    "max_concurrent": 3,
+    "language": "zh",
+    "speed_limit_kb": 0,
+    "theme": "Ocean Blue",
+    "minimize_to_tray": true
+}

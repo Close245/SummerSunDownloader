@@ -1,0 +1,78 @@
+/* SummerSun Downloader Stylesheet Template */
+QWidget {
+    color: {COLOR_TEXT_PRIMARY};
+    font-family: "Noto Sans SC", "Roboto", sans-serif;
+}
+QMainWindow { background-color: {COLOR_BACKGROUND_1}; }
+
+/* --- 主导航侧边栏 --- */
+#Sidebar { background-color: {COLOR_BACKGROUND_2}; }
+QPushButton#NavButton {
+    color: {COLOR_TEXT_SECONDARY}; background-color: transparent; border: none;
+    border-radius: 5px; margin: 5px 10px; padding: 15px; text-align: left;
+    font-size: 14px; font-weight: bold; icon-size: 20px;
+}
+QPushButton#NavButton:hover { background-color: {COLOR_BACKGROUND_3}; }
+QPushButton#NavButton:checked { background-color: {COLOR_ACCENT}; color: white; }
+
+/* --- 分类列表 --- */
+QListWidget#CategoryList {
+    background-color: {COLOR_BACKGROUND_2};
+    border: none;
+    outline: 0;
+    border-top: 1px solid {COLOR_BACKGROUND_3};
+}
+QListWidget#CategoryList::item {
+    padding: 12px 20px;
+    color: {COLOR_TEXT_SECONDARY};
+}
+QListWidget#CategoryList::item:hover {
+    background-color: {COLOR_BACKGROUND_3};
+}
+QListWidget#CategoryList::item:selected {
+    background-color: {COLOR_ACCENT};
+    color: white;
+    font-weight: bold;
+}
+
+/* --- 下载表格 --- */
+QTableWidget { background-color: {COLOR_BACKGROUND_1}; border: none; gridline-color: {COLOR_BACKGROUND_2}; }
+QTableWidget::item { border-bottom: 1px solid {COLOR_BACKGROUND_2}; padding: 8px; }
+QTableWidget::item:selected { background-color: {COLOR_ACCENT}; }
+QHeaderView::section { background-color: {COLOR_BACKGROUND_2}; padding: 8px; border: none; font-weight: bold; }
+
+/* --- 进度条 --- */
+QProgressBar { border: none; border-radius: 5px; text-align: center; background-color: {COLOR_BACKGROUND_2}; color: {COLOR_TEXT_PRIMARY}; }
+QProgressBar::chunk { background-color: {COLOR_ACCENT}; border-radius: 4px; }
+
+/* --- 设置与关于页面 --- */
+#SettingsPage QLabel, #AboutPage QLabel { font-size: 14px; margin-bottom: 5px; }
+#SettingsPage QLineEdit, #SettingsPage QSpinBox, #SettingsPage QComboBox {
+    background-color: {COLOR_BACKGROUND_2}; border: 1px solid {COLOR_BACKGROUND_3};
+    border-radius: 4px; padding: 8px; font-size: 14px;
+}
+#SettingsPage QPushButton, #AboutPage QPushButton {
+    background-color: {COLOR_ACCENT}; color: white; border: none;
+    border-radius: 4px; padding: 10px 20px; font-weight: bold;
+}
+#SettingsPage QPushButton:hover, #AboutPage QPushButton:hover { background-color: {COLOR_ACCENT_HOVER}; }
+
+/* --- 工具栏与搜索框 --- */
+QToolBar { background-color: {COLOR_BACKGROUND_1}; border-bottom: 1px solid {COLOR_BACKGROUND_2}; padding: 5px; }
+QToolBar QToolButton { color: {COLOR_TEXT_PRIMARY}; padding: 8px; margin: 2px; border-radius: 4px; }
+QToolBar QToolButton:hover { background-color: {COLOR_BACKGROUND_3}; }
+QLineEdit#SearchBox { padding: 8px; border: 1px solid {COLOR_BACKGROUND_3}; border-radius: 5px; background-color: {COLOR_BACKGROUND_2}; }
+
+/* --- 右键菜单 --- */
+QMenu {
+    background-color: {COLOR_BACKGROUND_2};
+    border: 1px solid {COLOR_BACKGROUND_3};
+    color: {COLOR_TEXT_PRIMARY};
+}
+QMenu::item {
+    padding: 8px 20px;
+}
+QMenu::item:selected {
+    background-color: {COLOR_ACCENT};
+    color: white;
+}
